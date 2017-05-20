@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "babel-node server/app.js"
   },
   "repository": {
     "type": "git",
@@ -17,9 +17,13 @@
   },
   "homepage": "https://github.com/MaxBurda/Notes-app#readme",
   "dependencies": {
-    "express": "^4.15.3"
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "mongoose": "*"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1"
+    "babel": "*",
+    "babel-loader": "*"
   }
 }
