@@ -17,13 +17,33 @@
   },
   "homepage": "https://github.com/MaxBurda/Notes-app#readme",
   "dependencies": {
-    "body-parser": "*",
-    "cors": "*",
-    "express": "*",
-    "mongoose": "*"
+    "axios": "*",
+   "body-parser": "*",
+   "classnames": "*",
+   "cors": "*",
+   "events": "*",
+   "express": "*",
+   "flux": "*",
+   "jquery": "*",
+   "keymirror": "*",
+   "less": "*",
+   "mongoose": "*",
+   "react": "*",
+   "react-dom": "*",
+   "react-masonry-component": "^4.0.0"
   },
   "devDependencies": {
+    "autoprefixer-loader": "*",
     "babel": "*",
-    "babel-loader": "*"
+    "babel-loader": "*",
+    "css-loader": "*",
+    "file-loader": "*",
+    "json-loader": "*",
+    "less-loader": "*",
+    "react-hot-loader": "*",
+    "style-loader": "*",
+    "url-loader": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*"
   }
 }
