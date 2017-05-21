@@ -1,14 +1,16 @@
 import mongoose from "mongoose";
 
+import config from '../../etc/config.json';
+
 import '../models/Note';
 
 const Note = mongoose.model('Note');
 
-export function setUpConnecrion() {
-    mongoose.connect(`mongodb://localhost/notes`);
+export function setUpConnection() {
+    mongoose.connect(`mongodb://${config.db.host}:${config.db.port}/${config.db.name}`);
 }
 
-export function listNotes() {
+export function listNotes(id) {
     return Note.find();
 }
 
@@ -19,7 +21,8 @@ export function createNote(data) {
         color: data.color,
         createdAt: new Date()
     });
-    return note.save;
+
+    return note.save();
 }
 
 export function deleteNote(id) {
