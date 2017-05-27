@@ -4,9 +4,9 @@ import './NoteEditor.less';
 const NoteEditor = React.createClass({
   getInitialState () {
     return {
-      title: '';
-      text: '';
-      color: '#fff';
+      title: '',
+      text: '',
+      color: '#fff'
     };
   },
   handleTextChange(event) {
