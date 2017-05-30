@@ -10,7 +10,7 @@ const App = React.createClass({
   render(){
     return (
       <div className = 'App'>
-        <h2 className = 'App_header'>Notes</h2>
+        <h2 className = 'App__header'>Notes</h2>
         <NoteEditor onNoteAdd = {this.handleNoteAdd} />
         <NotesGrid />
       </div>

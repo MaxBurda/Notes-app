@@ -38,10 +38,11 @@ const NoteEditor = React.createClass({
           onChange = {this.handleTitleChange}
         />
         <textarea
-          placeholder = 'Enter note text'
-          rows = {5}
-          className = 'NoteEditor__text'
-          value = {this.handleTextChange}
+          placeholder='Enter note text'
+          rows={5}
+          className='NoteEditor__text'
+          value={this.state.text}
+          onChange={this.handleTextChange}
         />
         <div className = 'NoteEditor__footer'>
           <button
